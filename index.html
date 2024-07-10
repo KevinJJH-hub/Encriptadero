@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secrertos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+    <body class="ordenDeLosElementos" >
+        <header></header>
+        <main></main>
+        <footer></footer>
+            
+
+
+
+        <img src="./assets/logo.png" class="paddingDelLogo">
+
+
+        <!--INPUT, ADVERTENCIAS Y BOTONES-->
+        <section class="disposicionDeLosElementosEncriptador">
+            
+            
+            
+            <textarea id="textoUsuario" rows="4" cols="300" placeholder="Ingrese el texto aqui" class="cajaTextarea"></textarea>
+
+    <div class="parametrosAdvertenciaYBotones">       
+            <p class="Advertencia">       
+            <img src="./assets/exclamacion.png">
+                Solo minusculas sin acentos
+            </p>
+
+
+            <div class="orderDeLosBotones">
+                <button onclick="clickEncriptar()" class="formatoDeBoton1">Encriptar</button>
+                <button onclick="clickDesencriptar()" class="formatoDeBoton2">Desencriptar</button>
+            </div>
+    </div>         
+
+        </section>
+
+
+
+
+<!--BBLOQUE 2, IMAGEN,TEXTO1,texto2-->
+<section class="disposicionDeLosElementosResultado">
+            
+<!--Parrafo para que muestre el resultado-->
+
+    <div id="ResultadosVentana" class="ventanaDeResultados">
+            <img id="imagenBuscandoTexto" src="./assets/buscandoTexto.png" class="formatoDeImagenBuscandoTexto">
+            <h1 id="textoBuscando1" class="formatoDeTexto1">
+                    Ningún mensaje fue encontrado
+            </h1>
+             
+        
+            <p id="textoBuscando2" class="formatoDeTexto2">
+                    Ingresa el texto que desees encriptar o desencriptar.
+            </p>
+
+        <div class="parrafoYBotonCopiar">
+            <p id="resultados" class="cuadroDeResultados">
+            </p>
+            <button onclick="copiarContenido()" id="botonDeCopia" class="botonCopiar" hidden="true">
+             Copiar
+            </button>
+        </div>      
+
+    </div>            
+</section>
+
+
+
+
+
+        <script src="app1.js"></script>
+    </body>
+</html>
